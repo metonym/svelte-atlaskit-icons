@@ -1,0 +1,11 @@
+.DS_Store
+/bitbucket
+/editor
+/emoji
+/hipchat
+/jira
+/lib
+/media-services
+/node_modules
+yarn-debug.log*
+yarn-error.log*
