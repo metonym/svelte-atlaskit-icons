@@ -4,50 +4,50 @@ const { cleanDir, generateFromFolder } = require("svg-to-svelte");
 
 const options = { clean: true };
 
-function build() {
-  const lib = generateFromFolder(
+async function build() {
+  const lib = await generateFromFolder(
     "node_modules/@atlaskit/icon/svgs",
     "lib",
     options
   );
 
-  const bitbucket = generateFromFolder(
+  const bitbucket = await generateFromFolder(
     "node_modules/@atlaskit/icon/svgs/bitbucket",
     "bitbucket",
     options
   );
 
-  const editor = generateFromFolder(
+  const editor = await generateFromFolder(
     "node_modules/@atlaskit/icon/svgs/editor",
     "editor",
     options
   );
 
-  const emoji = generateFromFolder(
+  const emoji = await generateFromFolder(
     "node_modules/@atlaskit/icon/svgs/emoji",
     "emoji",
     options
   );
 
-  const hipchat = generateFromFolder(
+  const hipchat = await generateFromFolder(
     "node_modules/@atlaskit/icon/svgs/hipchat",
     "hipchat",
     options
   );
 
-  const jira = generateFromFolder(
+  const jira = await generateFromFolder(
     "node_modules/@atlaskit/icon/svgs/jira",
     "jira",
     options
   );
 
-  const mediaServices = generateFromFolder(
+  const mediaServices = await generateFromFolder(
     "node_modules/@atlaskit/icon/svgs/media-services",
     "media-services",
     options
   );
 
-  cleanDir("docs");
+  await cleanDir("docs");
 
   const docs = [
     "# docs",

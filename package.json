@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@atlaskit/icon": "20.1.1",
-    "svg-to-svelte": "^0.3.0"
+    "svg-to-svelte": "^0.3.4"
   },
   "repository": {
     "type": "git",
